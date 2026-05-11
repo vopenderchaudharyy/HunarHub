@@ -1,0 +1,199 @@
+# Dependencies
+node_modules/
+*.pnp
+.pnp.js
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Testing
+coverage/
+.nyc_output/
+
+# Production
+build/
+dist/
+out/
+
+# Misc
+.DS_Store
+*.pem
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+*.sublime-project
+*.sublime-workspace
+.vs/
+
+# OS files
+Thumbs.db
+.thumbsdb
+
+# Editor directories and files
+.vs
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Next.js
+.next/
+out/
+
+# Nuxt.js
+.nuxt
+
+# Gatsby files
+.cache/
+public
+
+# vuepress
+.vuepress/dist
+
+# Serverless directories
+.serverless/
+
+# FuseBox cache
+.fusebox/
+
+# DynamoDB Local files
+.dynamodb/
+
+# TernJS port file
+.tern-port
+
+# Webpack
+dist/
+
+# Uploads folder (if using multer)
+server/uploads/*
+!server/uploads/.gitkeep
+
+# macOS
+.AppleDouble
+.LSOverride
+
+# Windows
+.VisualStudioCode
+.vscode-test
+
+# Audio
+*.mp3
+*.wav
+
+# Video
+*.mp4
+*.mov
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+
+# Node.js
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Environment
+.env
+.env.*.local
+
+# Secrets
+secrets/
+.secrets
+
+# Build outputs
+dist/
+build/
+out/
+
+# Cache directories
+.cache/
+.vuepress/dist
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
+
+# IDE specific files
+.vscode/settings.json
+.vscode/launch.json
+.idea/workspace.xml
+
+# Testing
+coverage/
+.nyc_output/
+
+# Logs
+logs/
+*.log
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Heap snapshots
+*.heapsnapshot
+
+# Compiled binary addons
+.node/
+build/Release
+
+# MongoDB
+.mongodb
+mongodb/
+
+# Firebase
+.firebase/
+*.rulerc
+
+# Parcel
+.cache
+dist
+
+# Custom files
+*.seed
+*.pid
+*.pid.lock
+*.stats.json
+
+# Ignore local development files
+local/
+dev/
+temp/
+
+# Certificates
+*.pem
+*.key
+*.crt

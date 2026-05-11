@@ -1,0 +1,175 @@
+/* ===== HunarHub Global Styles ===== */
+:root {
+  --primary: #E8580A;
+  --primary-dark: #c44a08;
+  --primary-light: #f97316;
+  --secondary: #1a1a1a;
+  --bg: #ffffff;
+  --bg-warm: #FFF8F3;
+  --bg-section: #fdf6f0;
+  --text-main: #1a1a1a;
+  --text-muted: #6b7280;
+  --text-light: #9ca3af;
+  --border: #e5e7eb;
+  --border-warm: #f0d5c0;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.1);
+  --shadow-lg: 0 10px 40px rgba(0,0,0,0.12);
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --font-main: 'Poppins', sans-serif;
+  --font-display: 'Playfair Display', serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--text-main);
+  background: var(--bg);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-family: var(--font-main);
+}
+
+img {
+  max-width: 100%;
+}
+
+/* ===== Utility Classes ===== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+  padding: 12px 28px;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 2px solid var(--primary);
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark);
+  border-color: var(--primary-dark);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(232, 88, 10, 0.3);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--primary);
+  padding: 12px 28px;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 2px solid var(--primary);
+}
+
+.btn-outline:hover {
+  background: var(--primary);
+  color: white;
+}
+
+.btn-outline-dark {
+  background: transparent;
+  color: var(--secondary);
+  padding: 12px 28px;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 2px solid var(--secondary);
+}
+
+.btn-outline-dark:hover {
+  background: var(--secondary);
+  color: white;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--text-main);
+  margin-bottom: 8px;
+}
+
+.section-divider {
+  width: 48px;
+  height: 3px;
+  background: var(--primary);
+  margin: 8px auto 40px;
+  border-radius: 2px;
+}
+
+.orange-text {
+  color: var(--primary);
+}
+
+/* ===== Scrollbar ===== */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 3px;
+}
+
+/* ===== Animations ===== */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+/* ===== Star Rating ===== */
+.stars {
+  color: #f59e0b;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
